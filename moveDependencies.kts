@@ -16,6 +16,8 @@ val dependencies = scriptFiles
     .toSet()
     .map {dependsOnMaven.matchAt(it,0)!!.groupValues[1] }
     .map { "implementation($it)"}
+    .onEach { println(it) }
+    
 
 File("../build.gradle.kts")
     .writeText(gradleBuildTemplate(dependencies))
