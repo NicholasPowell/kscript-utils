@@ -84,13 +84,4 @@ suspend fun executeShellCommand(
       .joinToString(" ")
   )
 
-runBlocking {
-  // Dealing with timeouts
-  val r = withTimeout(3.seconds) {
-    executeShellCommand(args[0], *args.copyOfRange(1, args.size))
-  }
-  System.out.print(r.stdout)
-  System.err.print(r.stderr)
-  System.exit(r.exitCode)
-}
 
