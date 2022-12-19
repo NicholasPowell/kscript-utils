@@ -6,11 +6,16 @@
 val kst = "kscript"
 val gistUrl = "https://raw.githubusercontent.com/NicholasPowell/kscript-utils/main/"
 
+println("ks.kts")
+println("Kscript utilities")
+
+println("ks {action}")
 fun ks(action: String) = 
   runBlocking {
     executeShellCommand(kst, gistUrl + action)
   }
 
+ println("clearCache")
 fun clearCache() = 
   runBlocking {
     executeShellCommand("kscript", "--clear-cache")
