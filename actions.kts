@@ -1,6 +1,6 @@
 #!/usr/bin/env kscript
 
-val actions = listOf('
+val actions = listOf(
   "files.kt",
   "ks.kts"
 )
