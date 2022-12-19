@@ -1,2 +1,1 @@
 # kscript-utils
-nice
