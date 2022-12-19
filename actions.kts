@@ -6,7 +6,8 @@ val actions = listOf(
 )
 
 for(arg in args) {
-  println(arg)
+  actions.contains(arg)
+  
 }
 
 println("v2")
