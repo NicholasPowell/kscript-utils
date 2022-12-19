@@ -11,3 +11,7 @@ fun ks(action: String) =
     executeShellCommand(kst, gistUrl + action)
   }
 
+fun clearCache() = 
+  runBlocking {
+    executeShellCommand("kscript", "--clear-cache")
+  }
