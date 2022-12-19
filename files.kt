@@ -1,5 +1,8 @@
 import java.io.File
 
+println("files.kt")
+println("Utilities for parsing kscript source files")
+
 val srcFiles = File(".")
     .listFiles()
     .iterator()
