@@ -11,12 +11,11 @@ val actions = listOf(
 )
 
 for(arg in args) {
-if(  actions.contains(arg) )
-  runCommand("kscript")
+  if(  actions.contains(arg) )
+    ks(arg)
 }
 
-println("v2")
-
+println("v3")
 
 actions.onEach {
   println(it) 
