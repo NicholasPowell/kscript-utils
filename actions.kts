@@ -4,6 +4,10 @@
 @file:Include("files.kt")
 @file:Include("ks.kts")
 
+
+
+println("v4")
+
 val actions = listOf(
   "runCommand.kts",
   "files.kt",
@@ -15,7 +19,7 @@ for(arg in args) {
     ks(arg)
 }
 
-println("v3")
+
 
 actions.onEach {
   println(it) 
